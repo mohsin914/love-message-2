@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Message 💖</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .heart {
+            font-size: 100px;
+            color: red;
+            animation: heartbeat 1s infinite;
+            cursor: pointer;
+        }
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        .message {
+            display: none;
+            font-size: 24px;
+            font-weight: bold;
+            color: pink;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heart" onclick="showLove()">❤️</div>
+    <div class="message" id="loveMessage">Love U Baby ❤️</div>
+
+    <script>
+        function showLove() {
+            document.getElementById("loveMessage").style.display = "block";
+        }
+    </script>
+</body>
+</html>
